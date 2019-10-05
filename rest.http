@@ -1,0 +1,8 @@
+POST http://localhost:2000/add-post HTTP/1.1
+content-type: application/json
+
+{
+    "title": "sample",
+    "description": "This is description",
+    "image": "image url"
+}
