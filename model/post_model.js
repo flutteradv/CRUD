@@ -5,7 +5,8 @@ const postSchema = new Schema(
     {
         title: {
             type: String,
-            required: true
+            required: true,
+            unique: true
         },
         description: {
             type: String,
@@ -21,5 +22,6 @@ const postSchema = new Schema(
         }
     }
 )
+postSchema.path('title').index({ unique: true });
 
 module.exports = mongoose.model('posts',postSchema)

@@ -4,5 +4,8 @@ const router = express.Router()
 
 router.get('/',postController.showIndex)
 router.post('/add-post',postController.addPost)
-
+router.get('/posts',postController.showPosts)
+router.get('/posts/:id',postController.showSinglePost)
+router.patch('/update-post',postController.updatePost)
+router.delete('/delete-post/:name',postController.deletePost)
 module.exports = router

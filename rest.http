@@ -1,8 +1,19 @@
-POST http://localhost:2000/add-post HTTP/1.1
-content-type: application/json
+# POST http://localhost:2000/add-post HTTP/1.1
+# content-type: application/json
 
-{
-    "title": "sample",
-    "description": "This is description",
-    "image": "image url"
-}
+# {
+#     "title": "wine",
+#     "description": "Best wine in cape town",
+#     "image": "image url"
+# }
+# GET http://localhost:2000/posts/5d9987c0144feb087012c3c0
+
+# PATCH  http://localhost:2000/update-post HTTP/1.1
+# content-type: application/json
+
+# {
+#     "title": "wine",
+#     "description": "Best wine!",
+#     "image": "wine url"
+# }
+DELETE http://localhost:2000/delete-post/wine HTTP/1.1
